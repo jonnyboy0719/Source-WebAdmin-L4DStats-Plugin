@@ -1,0 +1,105 @@
+<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action={action}&id={id}&page={page}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{advertisements_header_text}&nbsp;-->&nbsp;{advertisements_header_action_text}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{advertisements_info_general}:</b></span><br>
+        </td>
+      </TR>
+      <!-- BEGIN lastedit -->
+      <TR class="tableinhalt1">
+        <TD width="20%" align = "right"><span class="text1">{advertisements_lastedit_discription}:</span></TD>
+        <TD width="80%" align = "left"><span class="text1">{advertisements_user}</span></TD>
+      </TR>
+      <!-- END lastedit -->
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_id_discription}:</span></TD>
+        <TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_id}</textarea>
+       </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_type_discription}:</span></TD>
+        <TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_type}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_visible_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_visible}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_melee_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_melee}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_kills_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_kills}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_playtime_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_playtime}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_headshots_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_headshots}</textarea>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_killinfected_discription}:</span></TD>
+		<TD align = "left">
+			<textarea class="textarea2" rows="2"  name="text">{advertisements_killinfected}</textarea>
+       </TD>
+      </TR>
+
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_game_discription}:</span></TD>
+        <TD align = "left">
+		  <select name="adsgame">
+            <option value="All">Coop</option>
+            <!-- BEGIN scrollgametype -->
+            <option value="{scrollgametypevalue}"{scrollgametypeselected}>{scrollgametypetext}</option>
+            <!-- END scrollgametype -->
+          </select>
+		</TD>        
+      </TR>
+	  
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addeditadsbutton" type="submit" id="execaddeditads" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_das_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoads" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_ads_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<br>
+{colorhelp}

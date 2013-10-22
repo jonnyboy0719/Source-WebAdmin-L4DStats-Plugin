@@ -1,0 +1,72 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="6">{l4dstats_header_text}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="7">
+          <table border="0" width="100%">
+		    <tr>
+		      <td align = "center">
+		        {search}
+			  </td>
+		      <td align = "right">
+		        <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addads&page={page}">
+                  <center>
+                    <input name="addmodbutton" type="submit" id="addmod" value="{add_l4dstats_button_text}">
+                  </center>
+                </form>
+			  </td>
+	        </tr>
+		  </table>
+		</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="7"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="4%" align = "left"><span class="text1"><b>{l4dstats_steamid_discription}<b></span></td>
+        <TD width="64%" align = "left"><span class="text1"><b>{l4dstats_text_discription}<b></span></td>
+        <TD width="10%" align = "center"><span class="text1"><b>{l4dstats_visible_discription}<b></span></td>
+        <TD width="7%" align = "center"><span class="text1"><b>{l4dstats_type_discription}<b></span></td>
+        <TD width="7%" align = "center"><span class="text1"><b>{l4dstats_game_discription}<b></span></td>
+        <TD width="8%" align = "center"><span class="text1"><b>{l4dstats_options_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN l4dstatsview -->
+      <TR class="tableinhalt1">
+        <td align = "left"><span class="text1">{l4dstats_steamid}</span></td>
+        <td align = "left"><span class="text2">{l4dstats_text}</span></td>
+        <td align = "center"><span class="text1">{l4dstats_visible}</span></td>
+        <td align = "center"><span class="text1">{l4dstats_type}</span></td>
+        <td align = "center"><span class="text1">{modpic}</td>
+        <td align = "center">
+          <table border=0 cellpadding=1 cellspacing=0>
+            <tr>
+              <td><a class="link1" href="index.php?section={section}&plugin={plugin}&action=editads&page={page}&steamid={l4dstats_steamid}"><img src="inc/pics/edit.gif" title="{l4dstats_edit_pic_infotext}" border=0></a></td>
+              <td><a class="link1" href="index.php?section={section}&plugin={plugin}&action=delads&page={page}&steamid={l4dstats_steamid}"><img src="inc/pics/del.png" title="{l4dstats_delete_pic_infotext}" border=0></a></td>
+              <td>{arrows}</td>
+            </tr>
+          </table>
+        </td>
+      </TR>
+      <!-- END l4dstatsview -->
+      <!-- BEGIN l4dstatsviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="7"><span class="text1"><br>{l4dstats_no_entrys}<br><br></span></td>
+      </TR>
+      <!-- END l4dstatsviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="7"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="7">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addads&page={page}">
+            <center>
+              <input name="addmodbutton" type="submit" id="addmod" value="{add_l4dstats_button_text}">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <br>
