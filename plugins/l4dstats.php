@@ -61,6 +61,8 @@ $l4dstats_text19 = "<span style='color:red;'>Do you want delete the stats for th
 
 ### ============================================================================
 
+// This value is the GET parameter SteamID.
+$getprm_steamid = (isset($_GET['id']) && preg_match('/^STEAM_\d:\d:(\d*+)$/i', $_GET['id']) ? $_GET['id'] : null);
 
 //echo "<pre>";
 //print_r($Serversteamids);
@@ -86,7 +88,6 @@ if ($area == ''){ // Begin if Area = ''
 
 // ---------------------[ If action "empty" show maintable]---------------------
 if ($action == ""){
-
 
     // ---> START move entry section <---
     // Read move variable from adresslist
